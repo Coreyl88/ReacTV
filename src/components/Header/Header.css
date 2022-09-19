@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    /* position: fixed; */
+    position: fixed;
     display: flex;
     justify-content: center;
     background-color:dodgerblue;
