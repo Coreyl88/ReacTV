@@ -4,7 +4,7 @@ import "./Header.css";
 const Header = () => {
   return (
     <div>
-        <span className='header'> ReacTV </span>
+        <span onClick={() => window.scroll(0,0)} className='header'> ReacTV </span>
     </div>
   )
 }

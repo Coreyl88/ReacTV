@@ -2,7 +2,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import SimpleBottomNavigation from './components/Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Trending from './pages/Trending';
+import Trending from './pages/Trending/Trending';
 import Movies from './pages/Movies';
 import Search from './pages/Search';
 import Shows from './pages/Shows';

@@ -10,6 +10,7 @@
     color: whitesmoke;
     font-size: 4vw;
     z-index: 100;
+    cursor: pointer;
 }
 
 @media (max-width: 1000px) {
