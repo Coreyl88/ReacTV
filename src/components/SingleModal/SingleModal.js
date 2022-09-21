@@ -7,17 +7,18 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { img_500, unavailable, unavailableLandscape } from '../config/config'
 import './SingleModal.css';
+import Carousel from '../Carousel/Carousel';
 
 const style = {
   position: 'absolute',
   top: '50%',
   left: '50%',
+  width: "70%",
+  height: "65%",
   transform: 'translate(-50%, -50%)',
-  width: "90%",
-  height: "80%",
-  bgcolor: 'dodgerblue',
+  bgcolor: 'steelblue',
   border: '1px solid #282c34',
-  boxShadow: 100,
+  borderRadius: 5,
   p: 4, 
 };
 // Passing from Single.js 
@@ -73,8 +74,39 @@ export default function SingleModal({ children, media_type, id }) {
                 flick.poster_path
                 ? `${img_500}/${flick.poster_path}`
                 : unavailable
-                } 
+                }
+                alt={flick.name || flick.title}
+                className="SingleModal_picture"
               />
+              <img src= {
+                flick.backdrop_path
+                ? `${img_500}/${flick.backdrop_path}`
+                : unavailableLandscape
+              }
+              alt={flick.name || flick.title}
+              className="SingleModal_landscape"
+              />
+              <div className="SingleModal_about">
+                <span className="SingleModal_title">
+                  {flick.name || flick.title} (
+                    {(
+                      flick.first_air_date || 
+                      flick.release_date || 
+                      "-----"
+                    ).substring(0, 4)}
+                  )
+                </span>
+                {flick.tagline && (
+                  <i className="tagline">{flick.tagline}</i>
+                )}
+                <span className="SingleModal_description">
+                  {flick.overview}
+                </span>
+                <div>
+                  {/* Passing these to Carousel */}
+                  <Carousel media_type={media_type} id={id}/>
+                </div>
+              </div>
             </div>
           </Box>
         )}
