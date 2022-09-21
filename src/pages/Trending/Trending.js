@@ -19,6 +19,7 @@ const Trending = () => {
 
     useEffect(() => {
       fetchT();
+      // eslint-disable-next-line
     }, [page])
 
     return (

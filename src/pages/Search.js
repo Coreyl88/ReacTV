@@ -32,6 +32,7 @@ const Search = () => {
   useEffect(() => {
     window.scroll(0,0)
     fetchS();
+    // eslint-disable-next-line
   }, [motionPicture, page])
   
   

@@ -20,8 +20,6 @@ export default function SimpleBottomNavigation() {
     else if(value === 3) navigate("/search")
   }, [value, navigate])
   
-  
-
   return (
     <Box sx={{ width: '100%', position: 'fixed', bottom: 0, zIndex: 100, }}>
       <BottomNavigation

@@ -6,11 +6,10 @@ import Single from '../components/Single/Single';
 
 const Shows = () => {
 
-  const [page, setPage] = useState(1);
   const [flick, setFlick] = useState([]);
 
   const fetchM = async () => {
-    const { data } = await axios.get(`https://api.themoviedb.org/3/discover/tv?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}`);
+    const { data } = await axios.get(`https://api.themoviedb.org/3/discover/tv?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=`);
 
     // console.log(data);
     setFlick(data.results)
@@ -19,7 +18,7 @@ const Shows = () => {
 useEffect(() => {
   fetchM();
   // eslint-disable-next-line
-}, [page])
+}, [])
 
   return (
     <div>
@@ -38,7 +37,7 @@ useEffect(() => {
                         />
                     ))}
             </div>
-            <MyPagination setPage={setPage} />
+            <MyPagination />
     </div>
   )
 }
