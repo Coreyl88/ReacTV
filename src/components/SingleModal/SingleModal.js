@@ -66,33 +66,18 @@ export default function SingleModal({ children, media_type, id }) {
         }}
       >
         <Fade in={open}>
-          { flick && (
+          {flick && (
           <Box sx={style}>
-             <div className='SingleModal'>
-              <img src={flick.poster_path?`${img_500}/${flick.poster_patch}` : unavailable } alt={flick.name || flick.title} className="SingleModal_picture"
+            <div className='SingleModal'>
+              <img src={
+                flick.poster_path
+                ? `${img_500}/${flick.poster_path}`
+                : unavailable
+                } 
               />
-              <img src={flick.backdrop_path?`${img_500}/${flick.backdrop_path}` : unavailableLandscape} alt={flick.name || flick.title} className="SingleModal_landscape"
-              />
-              <div className='SingleModal_about'>
-                <span className="SingleModal_title">
-                  {flick.name || flick.title} (
-                    {(
-                      flick.first_air_date || flick.release_date || "-----"
-                    ).substring(0, 4)})
-                </span>
-                {flick.tagline && (
-                  <i className='tagline'>{flick.tagline}</i>
-                )}
-                <span className='SingleModal_description'>
-                  {flick.overview}
-                </span>
-                {/* <div>
-                  <Carousel id={id} media_type={media_type}/>
-                </div> */}
-              </div>
             </div>
           </Box>
-          )};
+        )}
         </Fade>
       </Modal>
     </>
