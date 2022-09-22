@@ -5,7 +5,7 @@ import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
-import { img_500, unavailable, unavailableLandscape } from '../config/config'
+import { img_500, unavailable } from '../config/config'
 import './SingleModal.css';
 import Carousel from '../Carousel/Carousel';
 

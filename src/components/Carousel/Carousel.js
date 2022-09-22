@@ -43,7 +43,8 @@ const Carousel = ({ media_type, id }) => {
     };
 
     useEffect(() => {
-      fetchC()
+      fetchC();
+      // eslint-disable-next-line
     }, [])
     
 
