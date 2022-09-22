@@ -13,7 +13,7 @@
     cursor: pointer;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
     .header {
       padding-top: 15px;
       font-size: 6.4vw;

@@ -31,12 +31,17 @@ Reactivision(ReacTV) is a Movie/TV show database similar to TMDB. It allows you 
 ## More Strech Features Wanted:<a name="morestrechfeatureswanted"></a>
 * Search by genre
 * Movies near me
-* Location of where each Movie/Tv Show is streaming
+* Sites of where each Movie/Tv Show is streaming
+* Show the trailer of a Movie/Tv Show
 
-### Wireframe:<a name=""wireframe></a>
+### Wireframe:<a name="wireframe"></a>
 
 
 ### Screenshots:<a name="screenshots"></a>
 
 
 ### Resouces used:<a name="resoucesused"></a>
+[Website Link](https://mui.com/)
+[Website Link](https://api.themoviedb.org/)
+[Website Link](https://www.youtube.com/)
+[Website Link](https://www.geeksforgeeks.org/)

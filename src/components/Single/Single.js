@@ -15,7 +15,7 @@ const Single = ({
   
   return (
     <SingleModal media_type={media_type} id={id}>
-      <Badge badgeContent={vote_average} color={vote_average>6?'primary' : 'secondary'}/>
+      <Badge badgeContent={vote_average} anchorOrigin={{vertical: 'bottom', horizontal: 'left'}}color={vote_average>6?'primary' : 'secondary'}/>
       <img className= "picture" src={poster ? `${img_300}/${poster}` : unavailable } alt={title} />
       <b className='title'>{title}</b>
       <span className='title-date'>

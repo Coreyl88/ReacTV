@@ -58,7 +58,6 @@ const Search = () => {
             setMotionPicture(newValue);
             setPage(1)
           }}
-          style={{ paddingBottom: 5 }}
           >
           <Tab style={{ width: '50%' }} label="Movie Search" />
           <Tab style={{ width: '50%' }} label="Series Search" />

@@ -47,6 +47,7 @@ export default function SingleModal({ children, media_type, id }) {
   
   return (
     <>
+      {/* was originally a button, but we want the card from Single.js */}
       <div 
         className='card'
         style={{ cursor: 'pointer' }}
@@ -78,14 +79,6 @@ export default function SingleModal({ children, media_type, id }) {
                 alt={flick.name || flick.title}
                 className="SingleModal_picture"
               />
-              <img src= {
-                flick.backdrop_path
-                ? `${img_500}/${flick.backdrop_path}`
-                : unavailableLandscape
-              }
-              alt={flick.name || flick.title}
-              className="SingleModal_landscape"
-              />
               <div className="SingleModal_about">
                 <span className="SingleModal_title">
                   {flick.name || flick.title} (
@@ -93,7 +86,7 @@ export default function SingleModal({ children, media_type, id }) {
                       flick.first_air_date || 
                       flick.release_date || 
                       "-----"
-                    ).substring(0, 4)}
+                    )}
                   )
                 </span>
                 {flick.tagline && (

@@ -17,13 +17,11 @@
 }
 
 .page-name {
-  text-transform: uppercase;
   display: flex;
   justify-content: center;
   font-family: 'Roboto', sans-serif;
   font-size: 3vw;
   padding: 5px;
-  border-radius: 50px;
   color: white;
 }
 

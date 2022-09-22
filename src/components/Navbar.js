@@ -28,7 +28,6 @@ export default function SimpleBottomNavigation() {
         onChange={(event, newValue) => {
           setValue(newValue);
         }}
-        
       >
         <BottomNavigationAction label="Trending" icon={<TrendingUpIcon />} />
         <BottomNavigationAction label="Movies" icon={<MovieIcon />} />
