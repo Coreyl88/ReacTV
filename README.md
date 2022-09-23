@@ -35,7 +35,7 @@ Reactivision(ReacTV) is a Movie/TV show database similar to TMDB. It allows you 
 * Show the trailer of a Movie/Tv Show
 
 ### Wireframe:<a name="wireframe"></a>
-
+![Screen Shot 2022-09-19 at 7 33 55 AM](https://user-images.githubusercontent.com/109244177/191875769-daa144af-9868-4adb-abb6-a222e9c97f42.png)
 
 ### Screenshots:<a name="screenshots"></a>
 
