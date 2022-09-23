@@ -15,6 +15,7 @@
 ---
 ### [ReacTV](https://monumental-tanuki-d4c1fd.netlify.app)<a name="websitelink"></a>
 ---
+### [TMDB API](https://api.themoviedb.org/)
 
 ### Project Description:<a name="projectdescription"></a>
 Reactivision(ReacTV) is a Movie/TV show database similar to TMDB. It allows you to search for a Movie/Tv Show and provides you with information about a particular motion picture.
@@ -43,6 +44,5 @@ Reactivision(ReacTV) is a Movie/TV show database similar to TMDB. It allows you 
 
 ### Resouces used:<a name="resoucesused"></a>
 [MUI](https://mui.com/)
-[API](https://api.themoviedb.org/)
 [Youtube](https://www.youtube.com/)
 [GeeksForGeeks](https://www.geeksforgeeks.org/)
