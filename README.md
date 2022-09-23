@@ -39,6 +39,7 @@ Reactivision(ReacTV) is a Movie/TV show database similar to TMDB. It allows you 
 
 ### Screenshots:<a name="screenshots"></a>
 ![Screen Shot 2022-09-22 at 10 35 09 AM](https://user-images.githubusercontent.com/109244177/191875842-9f091307-1cc7-4aec-9300-78bff638a3e3.png)
+![Screen Shot 2022-09-22 at 10 35 35 AM](https://user-images.githubusercontent.com/109244177/191875851-e68893e7-e6f9-415e-ba94-bd9fbcba2f0f.png)
 
 ### Resouces used:<a name="resoucesused"></a>
 [MUI](https://mui.com/)
